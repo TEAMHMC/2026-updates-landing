@@ -2,7 +2,7 @@
 // Vercel serverless function to handle email subscriptions via SendGrid
 // Save this file to api/notify.js in your project root
 
-const sgMail = require('@sendgrid/mail');
+import sgMail from '@sendgrid/mail';
 
 export default async function handler(req, res) {
   // Enable CORS
